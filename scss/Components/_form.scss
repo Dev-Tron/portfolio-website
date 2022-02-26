@@ -1,0 +1,27 @@
+#name {
+    background-color: rgb(228, 224, 224);
+    padding-top: 2%;
+    padding-bottom: 8%;
+
+    @media #{$brk-dsk} {
+        width: 320%;
+    }
+}
+
+#exampleFormControlInput1 {
+    @extend #name;
+}
+
+#exampleFormControlTextarea1 {
+    background-color: rgb(228, 224, 224);
+
+    @media #{$brk-tab} {
+        padding: 2% 12% 10% 2%;
+    }
+
+    @media #{$brk-dsk} {
+        width: 320%;
+        padding-left: 8%;
+    }
+}
+

@@ -1,0 +1,19 @@
+img {
+    object-fit: contain;
+}
+
+.img-align {
+    @media #{$brk-tab} {
+        margin-top: 25%;
+    }
+
+    @media #{$brk-dsk} {
+        margin-top: 13%;
+    }
+}
+
+.move-lefty {
+    @media #{$brk-dsk} {
+        grid-column-start: -2;
+    }
+}

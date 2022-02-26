@@ -1,0 +1,123 @@
+.center {
+    margin-left: 30%;
+    margin-top: 5%;
+}
+
+#text-first {
+    @media #{$brk-tab} {
+    position: absolute;
+    top: 53%;
+    background-color: white;
+    width: 60%;
+    padding-right: 10%;
+    padding-top: 5%;
+    }
+    @media #{$brk-dsk} {
+        top: 56%;
+        width: 35%;
+        padding-right: 0;
+        padding-top: 2%;
+    }
+
+}
+
+#about-me {
+    @media #{$brk-tab} {
+        display: flex;
+    }
+}
+
+#about-me h1 {
+    @media #{$brk-tab} {
+        margin-top: 10%;
+    }
+}
+
+#make-skinny {
+    @media #{$brk-tab} {
+        padding: 0 8%;
+    }
+}
+
+.flexboy {
+    @media #{$brk-tab} {
+        display: flex;
+    }
+}
+
+.right-align {
+    @media #{$brk-tab} {
+    padding: 5% 0 5% 10%;
+    }
+}
+
+.left-align {
+    @media #{$brk-tab} {
+    padding: 5% 10% 5% 0;
+    order: -1;
+    }
+}
+
+.grid-baby {
+    @media #{$brk-tab} {
+        display: grid;
+        grid-template-columns: auto auto;
+        column-gap: 10%;
+        }
+
+        @media #{$brk-dsk} {
+            display: block;
+            }
+
+}
+
+.pad-lock {
+    padding: 5%;
+
+    @media #{$brk-tab} {
+        padding: 4%;
+            
+    }
+
+    @media #{$brk-dsk} {
+        padding: 2% 10%;
+        }
+}
+
+.grid-man {
+    @media #{$brk-dsk} {
+        display: grid;
+        grid-template-columns: 30% auto;
+        }
+}
+
+.move-up {
+    @media #{$brk-tab} {
+        margin-top: -40%;
+        }
+
+        @media #{$brk-dsk} {
+            margin-top: 10%;
+            }
+}
+
+.flex-baby {
+    @media #{$brk-dsk} {
+        display: flex;
+        margin-top: 4%;
+        }
+}
+
+.flex-hero {
+    @media #{$brk-dsk} {
+        display: flex;
+        margin-top: 4%;
+        }
+}
+
+.touch {
+    @media #{$brk-dsk} {
+        margin-right: 30%;
+        white-space: nowrap;
+        }
+}
