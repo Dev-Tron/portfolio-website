@@ -10,15 +10,33 @@ html, body {
   margin: 0px;
   padding: 0px;
   overflow-x: hidden;
+  background-color: #141418;
 }
 
 body {
   display: grid;
-  font-family: "Public Sans", sans-serif;
+  font-family: "Courier New", Courier, monospace;
+}
+
+main {
+  padding: 0 5%;
+  text-align: center;
+  justify-content: center;
+  color: #a18851;
+  margin-top: 5%;
+}
+
+hr {
+  color: white;
+}
+
+ul {
+  text-align: center;
+  z-index: 1;
 }
 
 h1 {
-  font-family: "Ibarra Real Nova", serif;
+  font-family: "Courier New", Courier, monospace;
   font-weight: 500;
   font-size: xx-large;
 }
@@ -28,8 +46,9 @@ h1 {
 }
 @media (min-width: 768px) {
   #big {
-    margin-bottom: 14%;
+    margin-bottom: 8%;
     font-size: xx-large;
+    padding-right: 0%;
   }
 }
 
@@ -42,6 +61,23 @@ h1 {
     display: flex;
     margin-top: 10%;
     text-align: left;
+  }
+}
+
+#n-space {
+  margin-top: 40%;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  #n-space {
+    display: flex;
+    margin-top: 10%;
+    text-align: left;
+  }
+}
+@media (min-width: 1440px) {
+  #n-space {
+    margin-left: 0;
   }
 }
 
@@ -139,19 +175,38 @@ h3 {
 }
 @media (min-width: 1440px) {
   #line-hide {
-    width: 47%;
+    width: 53%;
+    margin-top: 4%;
+  }
+}
+
+@media (max-width: 767px) {
+  #line-draft {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  #line-draft {
+    width: 25%;
+    margin-top: 6%;
+    margin-right: 5%;
+  }
+}
+@media (min-width: 1440px) {
+  #line-draft {
+    width: 51%;
     margin-top: 4%;
   }
 }
 
 @media (min-width: 768px) {
   #make-skinnier {
-    width: 40%;
+    width: 90%;
   }
 }
 @media (min-width: 1440px) {
   #make-skinnier {
-    width: 30%;
+    width: 45%;
   }
 }
 
@@ -202,7 +257,16 @@ h3 {
 }
 @media (min-width: 768px) {
   #go-top {
-    padding: 2% 3%;
+    padding: 3%;
+    width: 50%;
+    height: 1%;
+  }
+}
+@media (min-width: 1440px) {
+  #go-top {
+    width: 25%;
+    height: 1%;
+    padding: 2%;
   }
 }
 
@@ -239,7 +303,7 @@ h3 {
 
 @media (min-width: 1440px) {
   .contact {
-    margin-right: 32%;
+    margin-right: 24%;
   }
 }
 
@@ -255,28 +319,44 @@ h3 {
   }
 }
 
+.get-up {
+  width: 100%;
+  height: auto;
+}
+
+#no-space {
+  margin-top: 0;
+}
+
+@media (min-width: 768px) {
+  #arc-left {
+    margin-right: 3%;
+  }
+}
+
 button {
   border-radius: 0%;
 }
 
 #about {
   width: 65%;
-  background-color: #203A4C;
+  background-color: #141418;
   border: #5FB4A2;
   padding-right: 10%;
+  color: white;
 }
 @media (min-width: 768px) {
   #about {
-    width: 58%;
+    width: 50%;
   }
 }
 
 #about:hover {
-  background-color: #5FB4A2;
+  background-color: #c41b0f;
 }
 
 #arrow-down {
-  padding-right: 30%;
+  padding-right: 10%;
 }
 
 .edge {
@@ -289,20 +369,33 @@ button {
 }
 
 #contact {
-  background-color: #203A4C;
   font-size: medium;
   padding: 5% 15%;
+  color: #141418;
+  margin-right: 0;
 }
 @media (min-width: 768px) {
   #contact {
     padding: 2% 10%;
   }
 }
+@media (min-width: 1440px) {
+  #contact {
+    margin-right: 25%;
+  }
+}
 
+.all-button {
+  margin-left: 95%;
+}
 @media (min-width: 768px) {
   .all-button {
     display: none;
   }
+}
+
+#burger-shift {
+  margin-left: 90%;
 }
 
 #name, #exampleFormControlInput1 {
@@ -312,7 +405,7 @@ button {
 }
 @media (min-width: 1440px) {
   #name, #exampleFormControlInput1 {
-    width: 320%;
+    width: 270%;
   }
 }
 
@@ -326,29 +419,72 @@ button {
 }
 @media (min-width: 1440px) {
   #exampleFormControlTextarea1 {
-    width: 320%;
+    width: 270%;
     padding-left: 8%;
   }
+}
+
+#containment {
+  text-align: left;
 }
 
 img {
   object-fit: contain;
 }
 
+.img-align {
+  width: 100%;
+  height: auto;
+}
 @media (min-width: 768px) {
   .img-align {
     margin-top: 25%;
+    width: 40%;
+    height: 50%;
   }
 }
 @media (min-width: 1440px) {
   .img-align {
     margin-top: 13%;
+    width: 50%;
+  }
+}
+
+.img-align2 {
+  width: 100%;
+  height: auto;
+}
+@media (min-width: 768px) {
+  .img-align2 {
+    margin-top: 25%;
+    width: 40%;
+    height: 50%;
+  }
+}
+@media (min-width: 1440px) {
+  .img-align2 {
+    margin-top: 13%;
+    width: 50%;
   }
 }
 
 @media (min-width: 1440px) {
   .move-lefty {
     grid-column-start: -2;
+  }
+}
+
+@media (min-width: 768px) {
+  #re-size {
+    width: 40%;
+    height: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  #fatter {
+    width: 100%;
+    height: auto;
   }
 }
 
@@ -391,7 +527,7 @@ img {
   position: absolute;
   height: 3px;
   width: 100%;
-  background: black;
+  background: white;
   border-radius: 1px;
   opacity: 1;
   left: 0;
@@ -455,6 +591,16 @@ img {
   }
 }
 
+#down-bottom {
+  margin-bottom: 0;
+  height: 100%;
+}
+@media (min-width: 768px) {
+  #down-bottom {
+    display: none;
+  }
+}
+
 .bottom2 {
   height: 100%;
   margin-bottom: 5%;
@@ -462,6 +608,16 @@ img {
 @media (max-width: 767px) {
   .bottom2 {
     display: none;
+  }
+}
+@media (min-width: 768px) {
+  .bottom2 {
+    padding: 0 4% 0 7%;
+  }
+}
+@media (min-width: 1440px) {
+  .bottom2 {
+    padding: 0 4%;
   }
 }
 
@@ -476,7 +632,61 @@ img {
 
 @media (min-width: 1440px) {
   .pad-right {
-    padding: 0 10%;
+    padding: 0 13% 0 14%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .pad-left {
+    padding: 0 13% 0 14%;
+  }
+}
+
+@media (min-width: 1440px) {
+  #pad-again {
+    padding: 0 5% 0 10%;
+  }
+}
+
+@media (min-width: 768px) {
+  .shift-over {
+    margin-left: 45%;
+  }
+}
+
+@media (min-width: 1440px) {
+  #pad-baby {
+    padding: 0 4% 0 0;
+  }
+}
+
+#pad-kid {
+  padding: 0 6% 0 9%;
+}
+@media (min-width: 1440px) {
+  #pad-kid {
+    padding: 0 12% 0 14%;
+  }
+}
+
+@media (min-width: 768px) {
+  #lone-bar {
+    padding: 0 7% 0 7%;
+  }
+}
+@media (min-width: 1440px) {
+  #lone-bar {
+    padding: 0;
+  }
+}
+
+#pad-none {
+  padding: 0;
+}
+
+@media (min-width: 1440px) {
+  #custom-bot {
+    padding: 0;
   }
 }
 
@@ -488,22 +698,24 @@ img {
 @media (min-width: 768px) {
   #text-first {
     position: absolute;
-    top: 53%;
-    background-color: white;
-    width: 60%;
-    padding-right: 10%;
-    padding-top: 5%;
+    top: 34%;
+    background-color: #141418;
+    width: 70%;
+    padding-top: 3%;
+    text-align: left;
   }
 }
 @media (min-width: 1440px) {
   #text-first {
-    top: 56%;
-    width: 35%;
-    padding-right: 0;
+    top: 59%;
+    width: 50%;
     padding-top: 2%;
   }
 }
 
+#about-me {
+  margin-top: 5%;
+}
 @media (min-width: 768px) {
   #about-me {
     display: flex;
@@ -518,7 +730,7 @@ img {
 
 @media (min-width: 768px) {
   #make-skinny {
-    padding: 0 8%;
+    padding: 0 0 0 8%;
   }
 }
 
@@ -602,8 +814,20 @@ img {
 
 @media (min-width: 1440px) {
   .touch {
-    margin-right: 30%;
+    margin-right: 20%;
     white-space: nowrap;
+  }
+}
+
+@media (min-width: 768px) {
+  #intro {
+    position: relative;
+  }
+}
+
+@media (min-width: 1440px) {
+  #small-boy {
+    text-align: left;
   }
 }
 

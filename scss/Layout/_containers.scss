@@ -6,22 +6,24 @@
 #text-first {
     @media #{$brk-tab} {
     position: absolute;
-    top: 53%;
-    background-color: white;
-    width: 60%;
-    padding-right: 10%;
-    padding-top: 5%;
+    top: 34%;
+    background-color: rgb(20, 20, 24);
+    width: 70%;
+    padding-top: 3%;
+    text-align: left;
     }
+
     @media #{$brk-dsk} {
-        top: 56%;
-        width: 35%;
-        padding-right: 0;
+        top: 59%;
+        width: 50%;
         padding-top: 2%;
     }
 
 }
 
 #about-me {
+    margin-top: 5%;
+
     @media #{$brk-tab} {
         display: flex;
     }
@@ -35,7 +37,7 @@
 
 #make-skinny {
     @media #{$brk-tab} {
-        padding: 0 8%;
+        padding: 0 0 0 8%;
     }
 }
 
@@ -117,7 +119,19 @@
 
 .touch {
     @media #{$brk-dsk} {
-        margin-right: 30%;
+        margin-right: 20%;
         white-space: nowrap;
+        }
+}
+
+#intro {
+    @media #{$brk-tab} {
+        position: relative;
+        }
+}
+
+#small-boy {
+    @media #{$brk-dsk} {
+        text-align: left;
         }
 }

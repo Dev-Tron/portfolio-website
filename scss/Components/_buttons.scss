@@ -4,21 +4,22 @@ button {
 
 #about {
     width: 65%;
-    background-color: #203A4C;
+    background-color: rgb(20, 20, 24);;
     border: #5FB4A2;
     padding-right: 10%;
+    color: white;
 
     @media #{$brk-tab} {
-        width: 58%;
+        width: 50%;
     }
 }
 
 #about:hover {
-    background-color: #5FB4A2;
+    background-color: #c41b0f;
 }
 
 #arrow-down {
-    padding-right: 30%;
+    padding-right: 10%;
 }
 
 .edge {
@@ -30,18 +31,29 @@ button {
 }
 
 #contact {
-    background-color: #203A4C;
     font-size: medium;
     padding: 5% 15%;
+    color: rgb(20, 20, 24);
+    margin-right: 0;
     
     @media #{$brk-tab} {
        padding: 2% 10%; 
     }
+
+    @media #{$brk-dsk} {
+        margin-right: 25%;
+    }
 } 
 
 .all-button {
+    margin-left: 95%;
+
     @media  #{$brk-tab} {
         display: none;
     }
         
+}
+
+#burger-shift {
+    margin-left: 90%;
 }

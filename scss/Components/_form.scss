@@ -4,7 +4,7 @@
     padding-bottom: 8%;
 
     @media #{$brk-dsk} {
-        width: 320%;
+        width: 270%;
     }
 }
 
@@ -20,8 +20,12 @@
     }
 
     @media #{$brk-dsk} {
-        width: 320%;
+        width: 270%;
         padding-left: 8%;
     }
+}
+
+#containment {
+    text-align: left;
 }
 

@@ -3,17 +3,53 @@ img {
 }
 
 .img-align {
+    width: 100%;
+    height: auto;
+
     @media #{$brk-tab} {
         margin-top: 25%;
+        width: 40%;
+        height: 50%;
     }
 
     @media #{$brk-dsk} {
         margin-top: 13%;
+        width: 50%;
+    }
+}
+
+.img-align2 {
+    width: 100%;
+    height: auto;
+
+    @media #{$brk-tab} {
+        margin-top: 25%;
+        width: 40%;
+        height: 50%;
+    }
+
+    @media #{$brk-dsk} {
+        margin-top: 13%;
+        width: 50%;
     }
 }
 
 .move-lefty {
     @media #{$brk-dsk} {
         grid-column-start: -2;
+    }
+}
+
+#re-size {
+    @media #{$brk-tab} {
+        width: 40%;
+        height: auto;
+    }
+}
+
+#fatter {
+    @media #{$brk-tab} {
+        width: 100%;
+        height: auto;
     }
 }

@@ -12,10 +12,9 @@
 
 <body>
   <div class="pad-lock">
-    <nav class="navbar navbar-expand-lg navbar-light bg-white hidebar">
+    <nav class="navbar navbar-expand-lg navbar-dark hidebar">
       <div class="container-fluid">
-        <a class="navbar-brand black" href="#"><img src="images/logo.svg" alt="logo"></a>
-        <button class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around all-button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around" id="burger-shift" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="toggler-icon top-bar"></span>
           <span class="toggler-icon middle-bar"></span>
           <span class="toggler-icon bottom-bar"></span>
@@ -23,45 +22,40 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="index.html">HOME</a>
+              <a class="nav-link text-white" href="index.html">HOME</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="portfolio.html">PORTFOLIO</a>
+              <a class="nav-link text-white" href="portfolio.html">PORTFOLIO</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact.html">CONTACT ME</a>
+              <a class="nav-link text-white" href="contact.html">CONTACT ME</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    <nav class="navbar navbar-light bg-white navbar2">
-      <div class="container-fluid">
-        <img src="images/logo.svg" alt="logo">
-        <a class="navbar-brand ms-auto fs-6" href="index.html">HOME</a>
-        <a class="navbar-brand ms-5 fs-6" href="portfolio.html">PORTFOLIO</a>
-        <a class="navbar-brand ms-5 fs-6" href="contact.html">CONTACT ME</a>
+    <nav class="navbar navbar-dark bg-none navbar2">
+      <div class="container-fluid" id="pad-baby">
+        <a class="navbar-brand fs-6 shift-over" href="index.html">HOME</a>
+        <a class="navbar-brand fs-6" href="portfolio.html">PORTFOLIO</a>
+        <a class="navbar-brand fs-6" href="contact.html">CONTACT ME</a>
       </div>
     </nav>
 
     <main class="mt-3">
       <section class="flexboy">
-        <picture>
-          <source srcset="images/portfolio/desktop/image-portfolio-manage.jpg" media="(min-width:1440px)">
-          <source srcset="images/portfolio/tablet/image-portfolio-manage.jpg" media="(min-width:768px)">
-          <img src="images/portfolio/mobile/image-portfolio-manage.jpg" class="img-align" alt="manage-page">
-        </picture>
+          <img src="images/3columncard.png" class="img-align" alt="3-column-card">
         <div class="slim-fast right-align">
           <hr>
           <h1 class="in-between">
-            Manage
+            3 column card
           </h1>
           <p class="line-space">
-            This project required me to build a fully responsive landing page to the designs provided. 
-            I used HTML5, along with CSS Grid and JavaScript for the areas that required interactivity, 
-            such as the testimonial slider.
+            This project required me to build a fully responsive 3 column card layout to the designs provided. 
+            I used HTML5, along with CSS for the areas that required interactivity, 
+            such as the buttons.
           </p>
-          <a class="btn btn-outline-dark btn-lg edge" href="manage.html">
+          <a class="btn btn-outline-light btn-lg edge" href="https://dev-tron.github.io/3-column-layout/">
             VIEW PROJECT
           </a>
           <hr class="line-down maxi">
@@ -69,22 +63,18 @@
       </section>
 
       <section class="mt-5 flexboy flexbaby">
-        <picture>
-          <source srcset="images/portfolio/desktop/image-portfolio-bookmark.jpg" media="(min-width:1440px)">
-          <source srcset="images/portfolio/tablet/image-portfolio-bookmark.jpg" alt="bookmark-page" media="(min-width:768px)">
-          <img src="images/portfolio/mobile/image-portfolio-bookmark.jpg" class="img-align" alt="bookmark-page">
-        </picture>
+          <img src="images/sign-up-form.png" class="img-align2" alt="sign-up-form">
         <div class="slim-fast left-align">
           <hr>
           <h1 class="in-between">
-            Bookmark
+            Sign-up form
           </h1>
           <p class="line-space">
-            This project required me to build a fully responsive landing page to the designs provided. I 
-            used HTML5, along with CSS Grid and JavaScript for the areas that required interactivity, such 
-            as the features section.
+            This project required me to build a fully responsive sign-up to the designs provided. I 
+            used HTML5, along with SASS and JavaScript for the areas that required interactivity, such 
+            as the submit button.
           </p>
-          <a class="btn btn-outline-dark btn-lg edge" href="bookmark.html">
+          <a class="btn btn-outline-light btn-lg edge" href="https://dev-tron.github.io/Sign-up-form/">
             VIEW PROJECT
           </a>
           <hr class="line-down maxi">
@@ -92,22 +82,18 @@
       </section>
 
       <section class="mt-5 flexboy">
-        <picture>
-          <source srcset="images/portfolio/desktop/image-portfolio-insure.jpg" media="(min-width:1440px)">
-          <source srcset="images/portfolio/tablet/image-portfolio-insure.jpg" alt="insure-page" media="(min-width:768px)">
-          <img src="images/portfolio/mobile/image-portfolio-insure.jpg" class="img-align" alt="manage-page">
-        </picture>
+          <img src="images/article-preview.png" class="img-align" alt="article-page">
         <div class="slim-fast right-align">
           <hr>
           <h1 class="in-between">
-            Insure
+            Article Preview Card
           </h1>
           <p class="line-space">
             This was a small project which mostly consisted of HTML and CSS. I built a fully-responsive 
-            landing page. The only JavaScript this project required was to enable the toggling of the 
-            mobile navigation.
+            article preview card. The only JavaScript this project required was to enable the toggling of the 
+            social media icons.
           </p>
-          <a class="btn btn-outline-dark btn-lg edge" href="insure.html">
+          <a class="btn btn-outline-light btn-lg edge" href="https://dev-tron.github.io/article-preview/">
             VIEW PROJECT
           </a>
           <hr class="line-down">
@@ -115,34 +101,30 @@
       </section>
       
       <section class="mt-5 flexboy flexbaby">
-        <picture>
-          <source srcset="images/portfolio/desktop/image-portfolio-fylo.jpg" media="(min-width:1440px)">
-          <source srcset="images/portfolio/tablet/image-portfolio-fylo.jpg" alt="fylo-page" media="(min-width:768px)">
-          <img src="images/portfolio/mobile/image-portfolio-fylo.jpg" class="img-align" alt="manage-page">
-        </picture>
+          <img src="images/FAQ-Accordion-Card.png" class="img-align" alt="FAQ-page">
         <div class="slim-fast left-align">
           <hr>
           <h1 class="in-between">
-            Fylo
+            FAQ Accordion Card
           </h1>
           <p class="line-space">
             This project was built in pure HTML and CSS. I had mobile and desktop designs to work to and 
             built it so that it was fully-responsive. I took a mobile-first approach and used modern 
             CSS like Flexbox and Grid for layout purposes.
           </p>
-          <a class="btn btn-outline-dark btn-lg edge" href="fylo.html">
+          <a class="btn btn-outline-light btn-lg edge" href="https://dev-tron.github.io/FAQ-accordion-card/">
             VIEW PROJECT
           </a>
           <hr class="line-down maxi">
         </div>
         </section>
       
-        <section id="space">
+        <section id="n-space">
           <h1 id="make-skinnier"> 
             Interested in doing a project together?
           </h1>
-          <hr id="line-hide">
-          <a class="btn btn-outline-dark btn-lg mt-3 edge" id="go-top" href="contact.html">
+          <hr id="line-draft">
+          <a class="btn btn-outline-light btn-lg mt-3 edge" id="go-top" href="contact.html">
             CONTACT ME
           </a>
         </section>
@@ -150,48 +132,43 @@
     </div>
 
     <footer class="mt-5">
-      <nav class="navbar navbar-dark bg-dark bottom">
+      <nav class="navbar bottom">
         <div class="container-fluid">
-          <a class="navbar-brand flex-1" href="#">
-            <img src="images/logo2.svg" alt="" width="50" height="35" class="d-inline-block align-text-top">
-          </a>
           <a class="flex-2 mt-1 link-light" href="index.html">HOME</a>
           <a class="flex-3 mt-2 link-light" href="portfolio.html">PORTFOLIO</a>
           <a class="flex-4 mt-2 link-light" href="contact.html">CONTACT ME</a>
           <div class="center">
-            <a class="navbar-brand flex-5" href="#">
+            <a class="navbar-brand flex-5" href="https://github.com/Dev-Tron">
               <img src="images/icons/github.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
             </a> 
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="https://twitter.com/BrownKeytron">
               <img src="images/icons/twitter.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
             </a> 
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="https://www.linkedin.com/in/keytron-brown-022520118/">
               <img src="images/icons/linkedin.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
             </a> 
           </div>
         </div>
       </nav>
-      <nav class="navbar navbar-dark bg-dark bottom2">
-        <div class="container-fluid pad-right">
-          <img src="images/logo2.svg" alt="logo">
+      <nav class="navbar navbar-dark bg-none bottom2" id="lone-bar">
+        <div class="container-fluid pad-left">
           <a class="navbar-brand fs-6" href="index.html">HOME</a>
           <a class="navbar-brand fs-6" href="portfolio.html">PORTFOLIO</a>
           <a class="navbar-brand fs-6 space-left" href="contact.html">CONTACT ME</a>
           <div>
-            <a class="navbar-brand flex-5" href="#">
+            <a class="navbar-brand flex-5" href="https://github.com/Dev-Tron">
               <img src="images/icons/github.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
             </a> 
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="https://twitter.com/BrownKeytron">
               <img src="images/icons/twitter.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
             </a> 
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="https://www.linkedin.com/in/keytron-brown-022520118/">
               <img src="images/icons/linkedin.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
             </a> 
           </div>
         </div>
       </nav>
     </footer>
-  <script src="/js/jquery-3.6.0.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
   <script src="/js/app.js"></script>

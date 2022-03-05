@@ -11,10 +11,9 @@
 </head>
 <body>
   <div class="pad-lock">
-    <nav class="navbar navbar-expand-lg navbar-light bg-white hidebar">
+    <nav class="navbar navbar-expand-lg navbar-dark hidebar">
       <div class="container-fluid">
-        <a class="navbar-brand black" href="#"><img src="images/logo.svg" alt="logo"></a>
-        <button class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around all-button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around" id="burger-shift" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="toggler-icon top-bar"></span>
           <span class="toggler-icon middle-bar"></span>
           <span class="toggler-icon bottom-bar"></span>
@@ -22,29 +21,29 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="index.html">HOME</a>
+              <a class="nav-link text-white" href="index.html">HOME</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="portfolio.html">PORTFOLIO</a>
-            </li> 
+              <a class="nav-link text-white" href="portfolio.html">PORTFOLIO</a>
+            </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact.html">CONTACT ME</a>
+              <a class="nav-link text-white" href="contact.html">CONTACT ME</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    <nav class="navbar navbar-light bg-white navbar2">
-      <div class="container-fluid">
-        <img src="images/logo.svg" alt="logo">
-        <a class="navbar-brand ms-auto fs-6" href="index.html">HOME</a>
-        <a class="navbar-brand ms-5 fs-6" href="portfolio.html">PORTFOLIO</a>
-        <a class="navbar-brand ms-5 fs-6" href="contact.html">CONTACT ME</a>
+    <nav class="navbar navbar-dark bg-none navbar2">
+      <div class="container-fluid" id="arc-left">
+        <a class="navbar-brand shift-over fs-6" href="index.html">HOME</a>
+        <a class="navbar-brand fs-6" href="portfolio.html">PORTFOLIO</a>
+        <a class="navbar-brand fs-6"href="contact.html">CONTACT ME</a>
       </div>
     </nav>
-    <hr class="max-space">
+    
 
     <main>
+      <hr class="max-space">
       <section class="flex-baby">
         <div class="touch">
           <h1>
@@ -52,92 +51,91 @@
           </h1>
         </div>
 
-        <div>
+        <div id="small-boy">
           <p class="line-space">
             I’d love to hear about what you’re working on and how I could help. I’m currently 
             looking for a new role and am open to a wide range of opportunities. My preference 
-            would be to find a position in a company in London. But I’m also happy to hear about 
+            would be to find a position in a company in Philadelphia, PA. But I’m also happy to hear about 
             opportunites that don’t fit that description. I’m a hard-working and positive person 
             who will always approach each task with a sense of purpose and attention to detail. 
             Please do feel free to check out my online profiles below and get in touch using the form.
           </p>
-          <a class="navbar-brand" href="#">
-            <img src="images/icons/github2.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
+          <a class="navbar-brand" href="https://github.com/Dev-Tron">
+            <img src="images/icons/github.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
           </a> 
-          <a class="navbar-brand" href="#">
-            <img src="images/icons/twitter2.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
+          <a class="navbar-brand" href="https://twitter.com/BrownKeytron">
+            <img src="images/icons/twitter.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
           </a> 
-          <a class="navbar-brand" href="#">
-            <img src="images/icons/linkedin2.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
+          <a class="navbar-brand" href="https://www.linkedin.com/in/keytron-brown-022520118/">
+            <img src="images/icons/linkedin.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
         </div>
       </section>
       <hr id="line">
 
       <section class="flex-hero">
         <div class="contact">
-          <h1 class="text-dark">
+          <h1 class="text-light">
             Contact Me
           </h1>
         </div>
         <div>
-          <form action="" method="get">
-            <div class="mb-3">
-              <label for="name" class="form-label text-dark">Name</label>
-              <input class="form-control" id="name" type="text" placeholder="Jane Appleseed" aria-label="default input example" required>
-            </div>
-            <div class="mb-3">
-              <label for="exampleFormControlInput1" class="form-label text-dark">Email address</label>
-              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="email@example.com" required>
-            </div>
-            <div class="mb-3">
-              <label for="exampleFormControlTextarea1" class="form-label text-dark">Message</label>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="How can I help?" required></textarea>
-            </div>
-            <button class="btn btn-primary btn-lg mt-2 edge" id="contact">
-              SEND MESSAGE
-            </button>
+          <form action="https://formspree.io/f/xzbogjve" method="post">
+            <div id="containment">
+              <div class="mb-3">
+                <label for="name" class="form-label text-light">Name</label>
+                <input name="name" class="form-control" id="name" type="text" placeholder="Jane Appleseed" aria-label="default input example" required>
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label text-light">Email address</label>
+                <input type="email" name="email" class="form-control" id="exampleFormControlInput1" placeholder="email@example.com" required>
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label text-light">Message</label>
+                <textarea name="message" class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="How can I help?" required></textarea>
+              </div>
+            </div>  
+              <button class="btn btn-light btn-lg mt-2 edge" id="contact" type="submit">
+                SEND MESSAGE
+              </button>
+            
           </form>
         </div>
       </section>
     </main>
   </div>
 
-  <footer class="mt-5">
-    <nav class="navbar navbar-dark bg-dark bottom">
+  <footer id="no-space">
+    <nav class="navbar" id="down-bottom">
       <div class="container-fluid">
-        <a class="navbar-brand flex-1" href="#">
-          <img src="images/logo2.svg" alt="" width="50" height="35" class="d-inline-block align-text-top">
-        </a>
         <a class="flex-2 mt-1 link-light" href="index.html">HOME</a>
         <a class="flex-3 mt-2 link-light" href="portfolio.html">PORTFOLIO</a>
         <a class="flex-4 mt-2 link-light" href="contact.html">CONTACT ME</a>
         <div class="center">
-          <a class="navbar-brand flex-5" href="#">
+          <a class="navbar-brand flex-5" href="https://github.com/Dev-Tron">
             <img src="images/icons/github.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
           </a> 
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="https://twitter.com/BrownKeytron">
             <img src="images/icons/twitter.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
           </a> 
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="https://www.linkedin.com/in/keytron-brown-022520118/">
             <img src="images/icons/linkedin.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
           </a> 
         </div>
       </div>
     </nav>
-    <nav class="navbar navbar-dark bg-dark bottom2">
-      <div class="container-fluid pad-right">
-        <img src="images/logo2.svg" alt="logo">
+    <nav class="navbar navbar-dark bg-none bottom2" id="pad-none">
+      <div class="container-fluid" id="pad-kid">
         <a class="navbar-brand fs-6" href="index.html">HOME</a>
         <a class="navbar-brand fs-6" href="portfolio.html">PORTFOLIO</a>
         <a class="navbar-brand fs-6 space-left" href="contact.html">CONTACT ME</a>
         <div>
-          <a class="navbar-brand flex-5" href="#">
+          <a class="navbar-brand flex-5" href="https://github.com/Dev-Tron">
             <img src="images/icons/github.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
           </a> 
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="https://twitter.com/BrownKeytron">
             <img src="images/icons/twitter.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
           </a> 
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="https://www.linkedin.com/in/keytron-brown-022520118/">
             <img src="images/icons/linkedin.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
           </a> 
         </div>
