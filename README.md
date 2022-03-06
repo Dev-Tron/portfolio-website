@@ -9,8 +9,6 @@ Keytron Browns Minimalist portfolio website
 
 ## Overview
 
-- Live Site URL: 
-
 ### Built with
 
 - Semantic HTML5 markup
