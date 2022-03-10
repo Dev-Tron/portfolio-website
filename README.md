@@ -9,8 +9,6 @@ Keytron Browns Minimalist portfolio website
 
 ## Overview
 
-- Live Site URL: 
-
 ### Built with
 
 - Semantic HTML5 markup
@@ -24,6 +22,6 @@ Keytron Browns Minimalist portfolio website
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
+- Website - https://dev-tron.github.io/portfolio-website/
 - Frontend Mentor - (https://www.frontendmentor.io/profile/Dev-Tron)
 - Twitter - (https://www.twitter.com/@BrownKeytron)# 
